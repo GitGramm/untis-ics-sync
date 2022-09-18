@@ -22,7 +22,7 @@ const convertLessonToEvent = (
     description: `Subject id: ${lesson.su
       .map((s) => s.id)
       .join(", ")}\nTeacher: ${lesson.te
-      .map((teacher) => teacher.longname)
+      ?.map((teacher) => teacher.longname)
       .join(", ")}\nClasses: ${lesson.kl.map((s) => s.name).join(" ")}`,
     startInputType: "local",
     startOutputType: "local",
